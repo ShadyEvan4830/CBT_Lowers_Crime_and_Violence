@@ -95,4 +95,4 @@ attr(data$FWself, "label") <- variable.labels["FWself"]
 attr(data$FWgeneral, "label") <- variable.labels["FWgeneral"]
 
 #### Save data ####
-write.csv(data, "Inputs_Folder/Data/FW_satisfaction-Study_2-data.csv")
+write.csv(data, "Outputs_Folder/Data/FW_satisfaction-Study_2-data.csv")
