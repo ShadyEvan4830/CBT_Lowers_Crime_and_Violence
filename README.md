@@ -1,7 +1,7 @@
-# Analyzing Toronto's Dining Scene: Public Food Safety and Economic Indicators in Focus
+# Free Will in Gig Work: The Key to Enhancing Job Satisfaction
 
 ## Overview of Paper
-This report mainly focuses on the publicly available Dinesafe data provided by the City of Toronto's Open Data platform, OpenDataToronto, alongside economic indicators such as the Consumer Price Index (CPI). The primary aim is to uncover trends in food safety compliance within Toronto's dining establishments and explore how these trends correlate with economic factors. This analysis serves to enhance understanding and inform policy decisions regarding public health and safety in urban foodscapes.
+This paper is based on Feldman et al.'s (2017) academic paper, which deeply explores how free will beliefs affect job satisfaction in various work environments, with a further special focus on platforms such as Amazon Mechanical Turk and the gig economy. By analyzing the correlation between personal autonomy perception and satisfaction, this research highlighted a significant positive relationship between the two. This study extends its findings to include the impact of cultural and job-specific factors on this relationship, providing new insights into nontraditional work settings. This paper aims to contribute to the broader discussion about the role of personal beliefs in shaping job satisfaction in today’s gig economy.
 
 ## File Structure
 The repository is structured as follows:
