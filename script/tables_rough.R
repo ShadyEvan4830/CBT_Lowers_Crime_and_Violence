@@ -3,7 +3,7 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load(haven, psych,dplyr,tidyverse, knitr,kableExtra)
 
 library(haven)
-setwd("C:/Users/BtChe/Documents/24 Winter/INF312/Paper II/Free-will/Data and code/Study 2")
+setwd(this)
 data <- read_sav("FW satisfaction-Study 2-data.sav")
 
 # Load the psych package
