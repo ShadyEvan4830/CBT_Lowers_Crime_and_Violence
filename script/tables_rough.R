@@ -3,7 +3,6 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load(haven, psych,dplyr,tidyverse, knitr,kableExtra)
 
 library(haven)
-setwd(this)
 data <- read_sav("FW satisfaction-Study 2-data.sav")
 
 # Load the psych package
