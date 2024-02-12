@@ -6,11 +6,10 @@ This paper is based on Feldman et al.'s (2017) academic paper, which deeply expl
 ## File Structure
 The repository is structured as follows:
 
-- `inputs_folder/data` contains the datasets utilized in the analysis, encompassing both raw and processed data. This includes the Dinesafe dataset and relevant economic data like CPI figures.
-
-- `outputs_folder/paper` houses all files associated with the final report. This includes the main Quarto document, the bibliography file, and the generated PDF of the complete report.
-
-- `scripts` contains R scripts used throughout the project. These scripts cover data acquisition, cleaning, and analysis. Specific scripts are dedicated to statistical analyses and visualization of data trends.
+- `Run scripts/00-simulate_data.R to simulate envisioned data
+- `Run scripts/01-download_data.R to download raw data from opendatatoronto
+- `Run scripts/02-data_cleaning.R to generate cleaned data
+- `Render outputs/paper/paper.qmd to generate the PDF of the paper 
 
 ## LLM Usage Statement
 - `inputs_folder/llm/usage.text` When writing this report, the ChatGPT 4 language model was used to solicit relevant inspiration and suggestions for the economic comparison of obtaining indicators of public food safety (dinesafe). ChatGPT 4 provides the author with some economic indicators that can be compared with dinesafe, such as Consumer Confidence, Business Performance Indicators, etc. (please refer to usage.txt for more details); these suggestions inspired the author and chose the Consumer Price Index as an additional indicator to compare dinesafe.
