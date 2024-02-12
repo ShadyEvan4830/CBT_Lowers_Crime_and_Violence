@@ -1,7 +1,7 @@
 # Free Will in Gig Work: The Key to Enhancing Job Satisfaction
 
 ## Overview of Paper
-This paper is based on Feldman et al.'s (2017) academic paper, which deeply explores how free will beliefs affect job satisfaction in various work environments, with a further special focus on platforms such as Amazon Mechanical Turk and the gig economy. By analyzing the correlation between personal autonomy perception and satisfaction, this research highlighted a significant positive relationship between the two. This study extends its findings to include the impact of cultural and job-specific factors on this relationship, providing new insights into nontraditional work settings. This paper aims to contribute to the broader discussion about the role of personal beliefs in shaping job satisfaction in today’s gig economy.
+This paper is based on Feldman et al.'s (2017) academic paper, which deeply explores how free will beliefs affect job satisfaction in various work environments, with a further special focus on platforms such as Amazon Mechanical Turk and the gig economy. By analyzing the correlation between personal autonomy perception and satisfaction, this research highlighted a significant positive relationship between the two. This research extends its findings to include the impact of cultural and job-specific factors on this relationship, providing new insights into nontraditional work settings. This paper aims to contribute to the broader discussion about the role of personal beliefs in shaping job satisfaction in today’s gig economy.
 
 ## File Structure
 The repository is structured as follows:
