@@ -1,5 +1,6 @@
 ---
 title: "Free Will in Gig Work: The Key to Enhancing Job Satisfaction"
+subtitle: "A Replication of Study Published in 2018 as Gig Economy Serves as an Essential Part of Society"
 author: 
   - Hadi Ahmad
   - Mingjia Chen
@@ -212,8 +213,9 @@ correlation_matrix_1[4,6] <- "(.83)"
 correlation_matrix_1[5,7] <- "(.85)"
 
 #print the table
-kable(correlation_matrix_1, booktabs = TRUE) 
-
+kable(correlation_matrix_1, booktabs = TRUE) |>
+  kable_styling(font_size = 8)
+  
 ```
 
 
@@ -256,7 +258,9 @@ rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDlimit"] <- 
 rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWself"] <- "FW T1 - Personal"
 rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWgeneral"] <- "FW T1 - General"
 
-kable(correlation_matrix_2,booktabs = TRUE)
+kable(correlation_matrix_2) |>
+  kable_styling() |>
+  row_spec(c(2,8), hline_after = TRUE)
 ```
 
 
@@ -291,7 +295,9 @@ rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "gender"] <- "G
 correlation_matrix_3[1,1] <- "(.88)"
 correlation_matrix_3[2,2] <- "(.79)"
 correlation_matrix_3[3,3] <- "(.84)"
-kable(correlation_matrix_3,booktabs = TRUE)
+kable(correlation_matrix_3,booktabs = TRUE) |>
+  kable_styling() |>
+  row_spec(3, hline_after = TRUE)
 
 ```
 
@@ -299,7 +305,7 @@ kable(correlation_matrix_3,booktabs = TRUE)
 
 ## Detailed findings
 
-Based on the primary work of Feldman et al. (2017), the original paper demonstrates that a strong belief in free will results in significant increases in job satisfaction; this correlation is relevant across cultural differences and in different work fields (e.g., from Taiwanese real estate agents to American digital Labor) similar results were maintained.
+The original paper by @feldman demonstrates that a strong belief in free will results in significant increases in job satisfaction; this correlation is relevant across cultural differences and in different work fields (e.g., from Taiwanese real estate agents to American digital Labor) similar results were maintained.
 
 Through this paper, we conducted a secondary survey of institutional beliefs in the digital gig economy (specifically the MTurk community) and sought to determine whether there is a positive relationship between U.S. workers’ beliefs about free will and their job satisfaction with Amazon Mechanical. Based on an analysis of information from a six-month focused study of Amazon MTurk workers presented in the original paper, our results confirm a positive relationship, indicating that workers with a stronger belief in free will tend to report higher levels of job satisfaction. Our analysis shows that the correlation between free will beliefs and job satisfaction is more vital in this digital microtask environment than in a traditional work environment. The above reinforces the idea that institutional beliefs in the increasingly prevalent gig economy are not just philosophical abstractions but have real consequences for workforce well-being.
 
@@ -309,15 +315,15 @@ The findings from our study offer theoretical implications for understanding job
 
 ## Journal Study: Work and Freedom in the Context of Agency Beliefs and Job Satisfaction
 
-To further confirm the validity of the original paper and our analysis, we selected another peer-reviewed professional academic journal for reference. By analyzing the comprehensive study conducted by @Baldissarri explored the complex relationship between work activities that trigger self-objectification and subsequent beliefs in personal free will. Through a series of methodologically rigorous studies, this research illustrates that diminished free will beliefs are a result of engaging in repetitive, fragmented, and externally directed tasks. This reduction in belief in free will, mediated by self-objectification, sets up a subtle interplay between the nature of work and the psychological makeup of the worker. Consistent with @feldman , @Baldissarri established a link between free will beliefs and job satisfaction. Further emphasis is placed on the complexity of agency within the professional realm.
+To further confirm the validity of the original paper and our analysis, we selected another peer-reviewed professional academic journal for reference. By analyzing the comprehensive study conducted by @Baldissarri explored the complex relationship between work activities that trigger self-objectification and subsequent beliefs in personal free will. Through a series of methodologically rigorous studies, this research illustrates that diminished free will beliefs are a result of engaging in repetitive, fragmented, and externally directed tasks. This reduction in belief in free will, mediated by self-objectification, sets up a subtle interplay between the nature of work and the psychological makeup of the worker. Consistent with @feldman. @Baldissarri established a link between free will beliefs and job satisfaction. Further emphasis is placed on the complexity of agency within the professional realm.
 
-Our findings suggest that MTurk employees who perceive greater autonomy and personal agency report greater job satisfaction, which resonates with the implications of the work of @Baldissarri. Routine and piecemeal tasks on MTurk can lead to some form of self-objectification, potentially undermining belief in individual free will and, in turn, job satisfaction. Therefore, the inherent structure of gig work may require strategies that enhance perceptions of free will and personal agency in order to increase job satisfaction.
+Our findings suggest that MTurk employees who perceive greater autonomy and personal agency report greater job satisfaction, which resonates with the implications of the work of @Baldissarri. Routine and piecemeal tasks on MTurk can lead to some form of self-objectification, potentially undermining belief in individual free will and, in turn, job satisfaction. Therefore, the inherent structure of gig work may require strategies that enhance perceptions of free will and personal agency to increase job satisfaction.
 
 ## Ethical Considerations in Long-Term Behavioural Studies
 
 Ethical considerations are crucial in long-term behavioural research, especially when studying beliefs and job satisfaction. In doing so, we focused on the research methods and ethical concerns of the original academic journal @feldman. @feldman took a series of steps to ensure the ethics of the study, including ensuring informed consent, protecting privacy and data security, and providing long-term participant support and opportunities for explanation.
 
-We agree with the above ethically appropriate measures of the original academic journal and believe that the research paid special attention to avoiding any possible adverse psychological effects and ensured that all research standards were met through ethical oversight by the institutional review board. This approach ensures maximum protection of participant well-being during the research process and reinforces our commitment to ethical standards while also improving research quality and participant trust in the research.
+We agree with the above ethically appropriate measures of the original academic journal and believe that the research paid particular attention to avoiding any possible adverse psychological effects and ensured that all research standards were met through ethical oversight by the institutional review board. This approach ensures maximum protection of participant well-being during the research process and reinforces our commitment to ethical standards while also improving research quality and participant trust in the research.
 
 ## Accounting for Bias
 
@@ -326,6 +332,11 @@ In addressing bias within the discussion section of our paper, it's essential to
 ## Analytical Limitations and Future Research Pathways
 
 While our study sheds light on the relationship between free will beliefs and job satisfaction in the context of MTurk, it also highlights several limitations. The unique demographics of MTurk workers and the platform's specific work conditions may not fully extrapolate to the broader gig economy. For instance, platforms like MTurk offer a degree of autonomy by allowing workers to choose tasks; however, this freedom is within the confines of predetermined task parameters and compensation set by the platform. Future research should explore this relationship across diverse gig platforms and investigate the longitudinal effects of free will beliefs on job satisfaction to establish causality. Additionally, examining the interplay between personal autonomy and platform policies could offer insights into optimizing job satisfaction in gig work.
+
+Upon revisiting the original paper by @feldman, we have identified certain inconsistencies in the correlation coefficients about the variable 'Beliefs in Free Will (T1).' These inconsistencies emerge when comparing the correlation calculations with the mean values derived from specific variables in the dataset. Unlike other variables used for the tables, the components of the 'Beliefs in Free Will (T1)' variable are not explicitly defined in the original paper and other supplementary documents. For the sack of replicating, we chose 'Free Will General (T1)' for the correlation analysis since the description is one of the closest possible variables representing  'Beliefs in Free Will (T1)'; however, the numbers do not match the ones on the original paper. Such discrepancies could be due to reasons such as unclear definitions and calculation errors, thus necessitating a closer examination of the computational processes employed in the original study. Another variable called 'FW T1 All subscales combined' has a similar problem as well. 
+
+To address these concerns in our discussion, we recommend thoroughly re-evaluating the data computation methods used, including a detailed review of the data transformation steps described by @feldman. Enhanced validation procedures and sensitivity analyses will be instrumental in clarifying these differences. This approach will bolster the credibility of our replication study and contribute to the scientific community's ongoing efforts to refine research methodologies in the study of free will beliefs and their impact on job satisfaction. 
+
 
 ## Concluding Observations
 
