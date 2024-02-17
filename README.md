@@ -7,10 +7,10 @@ This paper is based on Feldman et al.'s (2018) academic paper, which deeply expl
 ## File Structure
 The repository is structured as follows:
 
-- Run `Outputs_Folder` to view the PDF version of the final paper and related output-cleaned data
-- Run `Inputs_Folder` to check selected data from the original paper, sketches and LLM
-- Run `Scripts_Folder` to review simulation data, clean data, test data and related table data
-- Run `Original_Paper` to view the replication package included with the original paper
+- Run `outputs` to view the PDF version of the final paper and related output-cleaned data
+- Run `inputs` to check selected data from the original paper, sketches and LLM
+- Run `scripts` to review simulation data, clean data, test data and related table data
+- Run `original_paper` to view the replication package included with the original paper
 
 ## LLM Usage Statement
-- `Inputs_Folder/llm/usage.text` When writing this report, the ChatGPT 4 language model was used to obtain relevant inspiration and suggestions for freewill-related analysis and comparison with the original paper's content. ChatGPT 4 provides the author with some indicators that can support how workers' free will affects job satisfaction, such as psychological aspects (please refer to usage.txt for more details); these suggestions inspired the author to choose the current Journal Study: "Work and Freedom in the Context of Agency Beliefs and Job Satisfaction" serve as additional professional evidence to support freewill's relevant conclusions. ChatGPT 4 also provides grammatical and structural correction suggestions for the paper content to ensure more conciseness.
+- `inputs/llm/usage.text` When writing this report, the ChatGPT 4 language model was used to obtain relevant inspiration and suggestions for freewill-related analysis and comparison with the original paper's content. ChatGPT 4 provides the author with some indicators that can support how workers' free will affects job satisfaction, such as psychological aspects (please refer to usage.txt for more details); these suggestions inspired the author to choose the current Journal Study: "Work and Freedom in the Context of Agency Beliefs and Job Satisfaction" serve as additional professional evidence to support freewill's relevant conclusions. ChatGPT 4 also provides grammatical and structural correction suggestions for the paper content to ensure more conciseness.
