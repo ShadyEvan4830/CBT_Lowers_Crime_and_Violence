@@ -1,3 +1,11 @@
+#### Preamble ####
+# Purpose: Study 2 Table Creating
+# Author: Mingjia Chen
+# Date: 17 Febrary 2024
+# Contact: btchen21@outlook.com
+# License: MIT
+# Pre-requisites: R 4.3.2
+
 #download the packages if necessary, then load the packages
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(haven, psych,dplyr,tidyverse, knitr,kableExtra)
