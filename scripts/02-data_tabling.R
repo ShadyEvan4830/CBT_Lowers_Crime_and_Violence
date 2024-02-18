@@ -2,7 +2,7 @@
 # Purpose: Study 2 Table Creating
 # Author: Mingjia Chen
 # Date: 17 Febrary 2024
-# Contact: btchen21@outlook.com
+# Contact: mingjia.chen@mail.utoronto.ca 
 # License: MIT
 # Pre-requisites: R 4.3.2
 
