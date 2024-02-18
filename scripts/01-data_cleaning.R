@@ -2,7 +2,7 @@
 # Purpose: Clean Study 2 Dataset
 # Author: Mingjia Chen
 # Date: 11 Febrary 2024
-# Contact: btchen21@outlook.com
+# Contact: mingjia.chen@mail.utoronto.ca 
 # License: MIT
 # Pre-requisites: R 4.3.2
 
