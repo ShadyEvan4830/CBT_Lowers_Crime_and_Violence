@@ -142,15 +142,36 @@ Feldman and other scholars' [@feldman] inquiry amplifies our understanding of th
 
 This paper focuses specifically on the gig economy and Amazon Mechanical Turk. It is structured first by summarizing the purpose, methods, and results of the study, emphasizing the positive correlation between free will beliefs and job satisfaction. The introduction introduces the background and outlines the structure of the paper. The data and results from Feldman et al.'s study and our analysis highlight the role of perceived autonomy. The discussion explains these findings and points out their theoretical and practical implications. Ethical considerations and biases in accounting address research integrity issues. The conclusion reiterates the study's contribution to understanding job satisfaction in nontraditional work settings. Appendices and references provide supplementary information and scholarly resources.
 
-
-
 # Data
 
-The original paper was based on three studies conducted by the authors, with data that can be found on the Open Science Foundation website. The provided data [@feldman] was replicated in `R` [@citeR], with the goal of determining if there are any errors in the models, and what more can be learned and applied in a Canadian context.  Libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], and `knitr` [@knitr] are used for supplementary analysis. The goal of the study was to understand if a relationship exists between a belief of free will and job satisfaction for different cultural contexts. 
+The original paper was based on three studies conducted by the authors, with data that can be found on the Open Science Foundation website. The provided data [@feldman] was replicated in `R` [@citeR], with the goal of determining if there are any errors in the models, and what more can be learned and applied in a Canadian context.  Libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], and `knitr` [@knitr] are used for supplementary analysis. The goal of the study was to understand if a relationship exists between a belief of free will and job satisfaction for different cultural contexts.
 
+```{r}
+#| label: fig-beliefs-vs-satis
+#| fig-cap: Beliefs in Free will vs. Job Satisfaction
+#| echo: false
+#| warning: false
+#| message: false
+
+jobsat <- rowMeans(data[, c("jobsatT1", "jobsatT2")])
+
+lm_fit <- lm(FWDfwagency ~ jobsat, data=data)
+
+data |>
+  ggplot(aes(x = FWDfwagency, y = jobsat)) +
+  geom_point() +
+  geom_smooth(method='lm', se = FALSE, col = "red") +
+  theme_minimal() +
+  labs(x = "Free Will Belief", y = "Job satisfaction")
+  add_footnote("Linear regression model with coefficient of 0.2236.")
+```
+
+Linear regression model with coefficient of 0.2236.
+
+\break
 ## Methodology
 
-The original paper was based on three studies conducted by the authors. The first study looked at responses to survey questions from 252 real estate agents in Taiwan. The questions were translated from English to Chinese and back to English by senior researchers fluent in both languages, due to language differences between the respondents in Study 1 and Study 2. These translations were cross-verified by another senior researcher also fluent in both languages, to ensure the responses accurately captured the sentiments of the respondents. A total of eight questions were asked about free will and job satisfaction, with responses taken through a Likert-type scale. Here is a sample of the questions asked:
+The original paper was based on three studies conducted by the authors. The first study looked at responses to survey questions from 252 real estate agents in Taiwan. The questions were translated from English to Chinese and back to English by senior researchers fluent in both languages, due to language differences between the respondents in Study 1 and Study 2. These translations were cross-verified by another senior researcher also fluent in both languages, to ensure the responses accurately captured the sentiments of the respondents. A total of eight questions were asked about free will and three questions about job satisfaction, with responses taken through a Likert-type scale. Here is a sample of the questions asked:
 
 * I am in charge of the decisions I make.
 * I actively choose what to do among the choices I have.
