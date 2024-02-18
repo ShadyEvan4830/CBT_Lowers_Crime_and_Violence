@@ -7,7 +7,7 @@ author:
   - Tianen (Evan) Hao
 thanks: "Code and data are available at: https://github.com/ShadyEvan4830/Freewill_Analysis/tree/main; Replication on Social Science Reproduction"
 platform available at: TBA"
-date: Febrary 11, 2024
+date: February 11, 2024
 date-format: long
 abstract: "In the area of work and personal beliefs, the concept of free will has a key impact on job satisfaction with people from different demographic backgrounds having various views based on their unique circumstances. This study examined the relationship between free will beliefs and job satisfaction across a series of studies involving Taiwanese real estate agents, U.S. online workers, and a diverse international sample, according to the academic paper from Feldman et al. (2018). We conducted a replication study of the paper by Feldman et al. (2018) regarding the gig economy within Amazon Mechanical Turk and found a strong positive correlation between individuals’ beliefs about free will and their job satisfaction, significantly mediated by perceived autonomy. Since the gig economy is such an essential part of society today, replicating this study will advance the conversation about how beliefs about free will impact job satisfaction in non-traditional work settings."
 format: pdf
