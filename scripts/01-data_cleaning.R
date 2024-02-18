@@ -12,7 +12,7 @@ library(dplyr)
 library(haven)
 
 #### Clean data ####
-data <- read_sav("FW satisfaction-Study 2-data.sav")
+data <- read_sav("inputs/data/FW satisfaction-Study 2-data.sav")
 
 data <- mutate(data,
                jobsat_3r = case_when(
@@ -199,5 +199,7 @@ attr(data$jobsatT2, "label") <- variable.labels["jobsatT2"]
 attr(data$jobautT1, "label") <- variable.labels["jobautT1"]
 attr(data$jobautT2, "label") <- variable.labels["jobautT2"]
 
+
+
 #### Save data ####
-write.csv(data, "FW_satisfaction-Study_2-data.csv")
+write.csv(data, "outputs/data/FW_satisfaction-Study_2-data.csv")
