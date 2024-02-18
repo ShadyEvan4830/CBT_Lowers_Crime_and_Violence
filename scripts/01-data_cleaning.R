@@ -1,7 +1,7 @@
 #### Preamble ####
 # Purpose: Clean Study 2 Dataset
 # Author: Mingjia Chen, Hadi Ahmad, Tianen (Evan) Hao
-# Date: 11 Febrary 2024
+# Date: 11 February 2024
 # Contact: mingjia.chen@mail.utoronto.ca 
 # License: MIT
 # Pre-requisites: R 4.3.2
