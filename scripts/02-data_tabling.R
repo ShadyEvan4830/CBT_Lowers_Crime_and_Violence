@@ -1,6 +1,6 @@
 #### Preamble ####
 # Purpose: Study 2 Table Creating
-# Author: Mingjia Chen
+# Author: Mingjia Chen, Hadi Ahmad, Tianen (Evan) Hao
 # Date: 17 Febrary 2024
 # Contact: mingjia.chen@mail.utoronto.ca 
 # License: MIT
