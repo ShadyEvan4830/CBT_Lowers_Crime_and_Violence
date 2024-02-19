@@ -9,7 +9,7 @@ thanks: "Code and data are available at: https://github.com/ShadyEvan4830/Freewi
 platform available at: TBA"
 date: February 11, 2024
 date-format: long
-abstract: "In the area of work and personal beliefs, the concept of free will has a key impact on job satisfaction, with people from different demographic backgrounds having various views based on their unique circumstances. This study examined the relationship between free will beliefs and job satisfaction across a series of studies involving Taiwanese real estate agents, U.S. online workers, and a diverse international sample, according to the academic paper from Feldman et al. (2018). We conducted a replication study of the paper by Feldman et al. (2018) regarding the gig economy within Amazon Mechanical Turk and found a strong positive correlation between individuals’ beliefs about free will and their job satisfaction, significantly mediated by perceived autonomy. Since the gig economy is such an essential part of society today, replicating this study will advance the conversation about how beliefs about free will impact job satisfaction in non-traditional work settings."
+abstract: "In the area of work and personal beliefs, the concept of free will has a key impact on job satisfaction, with people from different demographic backgrounds having various views based on their unique circumstances. We conducted a replication study of the paper by Feldman et al. (2018) regarding the gig economy within Amazon Mechanical Turk and found a strong positive correlation between individuals’ beliefs about free will and their job satisfaction, significantly mediated by perceived autonomy. Since the gig economy is such an essential part of society today, replicating this study will advance the conversation about how beliefs about free will impact job satisfaction in non-traditional work settings."
 format: pdf
 toc: true
 number-sections: true
@@ -152,64 +152,16 @@ The original paper was based on two studies conducted by the authors, and second
 
 ### Study 1
 
-In the first study, eight questions were asked about free will and three questions about job satisfaction using a Likert-type scale. It looked at responses from 252 real estate agents in Taiwan. The goal of the study was to determine if there was a correlation between the belief of free will and job satisfaction for the chosen respondents, and to test if a three-month delay introduced any variation in results. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree). As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. Below is a sample of the questions asked:
-
-Free will  
-* I am in charge of the decisions I make.  
-* I actively choose what to do among the choices I have.  
-* I am in charge of my actions even when my life’s circumstances are difficult.  
-(Five additional questions relating to free will were asked.)  
-  
-Job satisfaction  
-* Generally speaking, I am very satisfied with my job.  
-* I am generally satisfied with the feeling of worthwhile accomplishment I get from doing this job.  
-* I am satisfied with the kind of work I do in this job.  
+In the first study, eight questions were asked about free will and three questions about job satisfaction using a Likert-type scale. It looked at responses from 252 real estate agents in Taiwan. The goal of the study was to determine if there was a correlation between the belief of free will and job satisfaction for the chosen respondents, and to test if a three-month delay introduced any variation in results. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree) (Appendix @sec-study1). As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. 
 
 ### Study 2
 
-The second study focused on 137 American freelance workers, with a different set of survey questions examining a broader range of metrics on free will and satisfaction using a Likert-type scale. The goal of the second study was to test if the results of the first study could be applied to other contexts, to test if other agency factors affected the results, and to assess if a six-month delay introduced any variation in results. These questions can be broken down into the categories of job satisfaction, job autonomy, self-efficiency, free will, self-control, locus of control, self-esteem, self-efficacy, and implicit beliefs. Data on these additional variables was collected to examine if controlling for differences in factors like locus of control led to any differences in job satisfaction. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree). The answers to the locus of control questions serve as an exception, storing a sum of values by assigning a 0 or 1 depending on which option was chosen for a set of 13 questions. As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. Below is a sample of questions asked:
-
-Free will  
-* I have free will    
-* Free will is a part of the human spirit  
-* Free will is a basic part of human nature  
-(Six additional questions relating to free will were asked.)  
-
-Job satisfaction  
-* I feel fairly well satisfied with my present job doing MTurk tasks  
-* Most days I am enthusiastic about the work I do on MTurk  
-* Every time I work on tasks on MTurk it feels like forever  
-(Two additional questions relating to job satisfaction were asked.)  
-
-Job autonomy  
-* I have significant autonomy in determining how I do my job on MTurk  
-* I can decide on my own how to go about doing my work on MTurk  
-* I have considerable opportunity for independence and freedom in how I do my job on MTurk  
-
-Controls  
-* I am good at resisting temptation.  
-* I have a hard time breaking bad habits.  
-* I am lazy.  
-(10 additional questions relating to controls were asked.)  
-
-Self-esteem  
-* I feel that I am a person of worth, at least on an equal basis with others.  
-* I feel that I have a number of good qualities.  
-* All in all, I am inclined to feel that I am a failure.  
-(Seven additional questions relating to self-esteem were asked.)  
-
-Self-efficacy  
-* I am strong enough to overcome life's struggles.  
-* At root, I am a weak person.  
-* I can handle the situations that life brings.  
-(Five additional questions relating to self-efficacy were asked.)  
-
-\break
+The second study focused on 137 American freelance workers, with a different set of survey questions examining a broader range of metrics on free will and satisfaction using a Likert-type scale (@fig-descrip). The goal of the second study was to test if the results of the first study could be applied to other contexts, to test if other agency factors affected the results, and to assess if a six-month delay introduced any variation in results. These questions can be broken down into the categories of job satisfaction, job autonomy, self-efficiency, free will, self-control, locus of control, self-esteem, self-efficacy, and implicit beliefs (Appendix @sec-study2). Data on these additional variables was collected to examine if controlling for differences in factors like locus of control led to any differences in job satisfaction. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree). The answers to the locus of control questions serve as an exception, storing a sum of values by assigning a 0 or 1 depending on which option was chosen for a set of 13 questions. As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. 
 
 ```{r}
 #| label: fig-descrip
 #| fig-cap: Descriptive summary of Job Satisfaction Likert Scale Results
-#| fig-subcap: ["Job Satisfaction (T1)","Job Satisfaction (T2)"]
+#| fig-subcap: ["Job Satisfaction (T1)","Job Satisfaction (T2)","Beilef in Free Will"]
 #| layout-ncol: 2
 #| echo: false
 #| warning: false
@@ -232,44 +184,162 @@ ggplot(data2_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
   labs(x = "Question", y = "Percentage") +
   theme_minimal() +
   theme(legend.position = "bottom")
-```
 
-
-```{r}
-#| label: fig-descrip-FW
-#| fig-cap: Descriptive summary of Belief in Free Will Likert Scale Results
-#| echo: false
-#| warning: false
-#| message: false
-
-data_freq <- read.csv("FW_data_freq.csv")           
+data_freq3 <- read.csv("FW_data_freq.csv")           
 # Create the bar chart
-ggplot(data_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
+ggplot(data_freq3, aes(x = Question, y = Percent, fill = factor(Response))) +
   geom_bar(stat = "identity") +
   scale_fill_brewer(palette = "Blues", name = "Response") +
   labs(x = "Question", y = "Percentage") +
   theme_minimal() +
   theme(legend.position = "bottom")
 ```
+\break
 
 ### Study 3
 
-The third study relied on secondary data in the form of the World Values Survey, featuring over 14,000 respondents from 16 countries. The original dataset was not made available, and thus could not be replicated in this paper. Three variables were chosen from this dataset, representing the following questions asked:
-* Indicate how much freedom of choice and control you feel you have over the way
-your life turns out (1 = No choice and control to 10 = A great deal of choice and control)
-* Overall, how satisfied or dissatisfied are you with your job? (1 = Dissatisfied to 10 =
-Satisfied).
-* How free are you to make decisions in your job? (1 = None at all to 10 = A great deal)
+The third study relied on secondary data in the form of the World Values Survey, featuring over 14,000 respondents from 16 countries. The original dataset was not made available, and thus could not be replicated in this paper. Three variables were chosen from this dataset (Appendix @sec-study3).
 
 ## Replication
 
 The original authors used `SPSS` to run analyses on their findings. Data from studies 1 and 2 was provided in the replication package on `OSF` as SPS and SAV files, along with a version compiled into a spreadsheet. For this paper, we used `R` to replicate the findings by using `haven` to read in the data. This caused some incongruencies in the results, with a lower p-value on some variables.
 
-
-
-\break
-
 # Results
+
+## Main Findings
+
+Our analysis revealed a consistent positive correlation between beliefs in free will and job satisfaction across different cultural contexts. For instance, in @fig-beliefs-vs-satis, we observed a clear upward trend among Taiwanese real estate agents, where stronger free will beliefs were associated with higher job satisfaction; this analysis results from Study 1 can be used as a non-same type of worker situation to potentially support the relationship between free will and job satisfaction of Amazon American gig workers. Later, we find similar results for Amazon American gig workers; @fig-beliefs-vs-satis illustrates the same pattern among American gig workers. These trends suggest that the perception of autonomy can significantly enhance job contentment.
+
+
+## Reliability of Subscales 
+
+An analysis in terms of the reliability of the subscales used for determining participants’ responses regarding different variables is conducted (@tbl-corr-between-subscales). In @tbl-corr-between-subscales, the internal consistency (Cronbach’s alpha) of each subscale and the correlations between each combination are calculated to speculate the reliability and validity of the data set we used for the study. According to the results in @tbl-corr-between-subscales, although not strong, the subscales correlate significantly (p < .01) with the variables we would like to capture and study for the analysis. This means that these subscales and the data set are reliable to use for this paper.
+
+\newpage
+```{r}
+#| label: tbl-corr-between-subscales
+#| tbl-cap: Correlations between free will subscales and job satisfaction
+#| echo: false
+#| warning: false
+#| message: false
+
+## Table 2 (Appendix) - Correlations between free will subscales and job satisfaction
+
+#Correlations between free will subscales and job satisfaction
+# Select the variables for correlation analysis
+selected_variables_2 <-data[, c("jobsatT1", "jobsatT2", "FWDfw", "FWDagency", "FWDmoral","FWDresp",
+                              "FWDpower","FWDlimit","FWDall","FWDfwagency","FWself","FWgeneral")]
+
+# Compute pairwise correlations
+correlation_matrix_2 <-correlation_matrix(selected_variables_2[,1:12], digits = 2, use = 'lower', replace_diagonal = TRUE)
+
+#choose desired rows and columns
+correlation_matrix_2 <- correlation_matrix_2[c('FWDfwagency','FWDall','FWDfw','FWDagency','FWDmoral','FWDpower',
+                                               "FWDresp",'FWDlimit','FWself','FWgeneral'),]
+correlation_matrix_2 <- correlation_matrix_2[,c('jobsatT1 ','jobsatT2 ')]
+
+#rename columns and rows 
+colnames(correlation_matrix_2)[colnames(correlation_matrix_2) == "jobsatT1 "] <- "Job satisfaction T1"
+colnames(correlation_matrix_2)[colnames(correlation_matrix_2) == "jobsatT2 "] <- "Job satisfaction T2"
+
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDfwagency"] <- "FW T1 Agency and free will subscales"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDall"] <- "FW T1 All subscales combined"
+##ATTENTION: may need to modift the all subscale
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDfw"] <- "FW T1 Free will subscale"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDagency"] <- "FW T1 Personal agency subscale"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDmoral"] <- "FW T1 Moral responsibility subscale"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDpower"] <- "FW T1 Higher power control subscale (R)"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDresp"] <- "FW T1 Personal responsibility subscale"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDlimit"] <- "FW T1 Personal limitations subscale (R)"
+
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWself"] <- "FW T1 - Personal"
+rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWgeneral"] <- "FW T1 - General"
+
+kable(correlation_matrix_2) |>
+  kable_styling() |>
+  row_spec(c(2,8), hline_after = TRUE)
+
+```
+*Note.* T1 = collected in Time 1, T2 = collected in Time 2   
+\*p <.05. \*\*p<.01.\***p<.001.
+
+## Demographic Factors
+
+Demographic factors age and gender are speculated as well to see possible influence on job satisfaction with the combination of belief in free will. As the results in @tbl-demo-corr show, age and gender have a significant impact on belief in free will (p < .01); however, without these two demographic factors, belief in free will continues to significantly predict job satisfaction ((p < .001). This result ensures the significance of the relationship between one’s belief in free will and job satisfaction.
+
+```{r}
+#| label: tbl-demo-corr
+#| tbl-cap: Controlling for demographics
+#| echo: false
+#| warning: false
+#| message: false
+
+## Table 3-Controlling for demographics
+
+alphas1 <- c(0,0,0,0,0)
+###### Cronbach’s Alpha coefficients
+### Job statisfaction T1###
+# Running reliability analysis
+reliability_result <- psych::alpha(data[,c("jobsat_1","jobsat_2","jobsat_3r","jobsat_4","jobsat_5r")])
+# Displaying reliability statistics
+alphas1[1] <-(reliability_result$total$raw_alpha)
+
+### Job satisfaction T2###
+reliability_result <- psych::alpha(data[,c("jobsat2_1","jobsat2_2","jobsat2_3r","jobsat2_4","jobsat2_5r")])
+alphas1[2] <-(reliability_result$total$raw_alpha)
+
+### Beliefs in free will T1 ##
+reliability_result <- psych::alpha(data[,c("fw_1", "fw_2", "fw_3", "fw_4", "fw_5", 
+                                           "fw_6", "fw_7", "fw_8", "fw_9")])
+alphas1[3] <-(reliability_result$total$raw_alpha)
+
+### Job autonomy T1###
+reliability_result <- psych::alpha(data[,c("jobaut_3", "jobaut_4","jobaut_5")])
+alphas1[4] <-(reliability_result$total$raw_alpha)
+
+### Job autonomy T2###
+reliability_result <- psych::alpha(data[,c("jobaut2_3", "jobaut2_4","jobaut2_5")])
+alphas1[5] <-(reliability_result$total$raw_alpha)
+
+## round alphas into 2 digits
+alphas1 <- round(alphas1,2)
+
+selected_variables_3 <-data[, c("FWDfwagency","jobsatT1", "jobsatT2","age","gender")]
+
+# Compute pairwise correlations
+correlation_matrix_3 <- correlation_matrix(selected_variables_3[,1:5], digits = 2)
+#choose desired rows and columns
+correlation_matrix_3 <- correlation_matrix_3[,c('FWDfwagency ','jobsatT1 ','jobsatT2 ')]
+
+#rename columns and rows 
+colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "FWDfwagency "] <- "Belief in free will (T1)"
+colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "jobsatT1 "] <- "Job satisfaction (T1)"
+colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "jobsatT2 "] <- "Job satisfaction (T2)"
+
+rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "FWDfwagency"] <- "Belief in free will (T1)"
+rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "jobsatT1"] <- "Job satisfaction (T1)"
+rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "jobsatT2"] <- "Job satisfaction (T2)"
+rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "age"] <- "Age"
+rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "gender"] <- "Gender"
+
+
+correlation_matrix_3[1,1] <- paste("(" ,alphas1[3],")")
+correlation_matrix_3[2,2] <- paste("(" ,alphas1[1],")")
+correlation_matrix_3[3,3] <- paste("(" ,alphas1[2],")")
+kable(correlation_matrix_3,booktabs = TRUE) |>
+  kable_styling() |>
+  row_spec(3, hline_after = TRUE)
+
+```
+*Note.* T1 = collected in Time 1, T2 = collected in Time 2; diagonal values are reliability alpha coefficients. Values under diagonal are two-tailed correlations whereas above are partial correlations controlling for age and gender (T1). Gender is coded as 0 = Male, 1 = Female. 
++p<.10. \*p <.05. \*\*p<.01.\***p<.001.
+
+
+## Detailed Analysis and Trends
+
+The original paper by @feldman demonstrates that a strong belief in free will results in significant increases in job satisfaction; this correlation is relevant across cultural differences and in different work fields (e.g., from Taiwanese real estate agents to American digital Labor) similar results were maintained.
+
+Through this paper, we conducted a replication study on institutional beliefs in the digital gig economy (specifically the MTurk community) and sought to determine whether there is a positive relationship between U.S. workers’ beliefs about free will and their job satisfaction with Amazon Mechanical. Based on an analysis of information from a six-month focused study of Amazon MTurk workers presented and other related auxiliary analyses of different industries in the original paper, our results confirm a positive relationship, indicating that workers with a stronger belief in free will tend to report higher levels of job satisfaction. Our analysis shows that the correlation between free will beliefs and job satisfaction is more vital in this digital microtask environment than in a traditional work environment. The above reinforces the idea that institutional beliefs in the increasingly prevalent gig economy are not just philosophical abstractions but have real consequences for workforce well-being.
 
 ```{r}
 #| label: fig-beliefs-vs-satis
@@ -308,41 +378,15 @@ data |>
 
 ```
 
+Corresponding to @fig-beliefs-vs-satis, @tbl-Means-SD-Corr presents a quantitative synthesis of the relationship between free will beliefs and job satisfaction at two different time points. For example, the belief in free will at Time 1 (T1) had a correlation of 0.31** with job satisfaction at T1, and this association remained strong at Time 2 (T2). The statistical significance marked by ** (p<0.001) indicates a robust relationship that persisted over time. 
 
+\newpage
 ```{r}
 #| label: tbl-Means-SD-Corr
 #| tbl-cap: Study 2 Means, Standard Deviations, and Correlations
 #| echo: false
 #| warning: false
 #| message: false
-
-alphas1 <- c(0,0,0,0,0)
-###### Cronbach’s Alpha coefficients
-### Job statisfaction T1###
-# Running reliability analysis
-reliability_result <- psych::alpha(data[,c("jobsat_1","jobsat_2","jobsat_3r","jobsat_4","jobsat_5r")])
-# Displaying reliability statistics
-alphas1[1] <-(reliability_result$total$raw_alpha)
-
-### Job satisfaction T2###
-reliability_result <- psych::alpha(data[,c("jobsat2_1","jobsat2_2","jobsat2_3r","jobsat2_4","jobsat2_5r")])
-alphas1[2] <-(reliability_result$total$raw_alpha)
-
-### Beliefs in free will T1 ##
-reliability_result <- psych::alpha(data[,c("fw_1", "fw_2", "fw_3", "fw_4", "fw_5", 
-                                           "fw_6", "fw_7", "fw_8", "fw_9")])
-alphas1[3] <-(reliability_result$total$raw_alpha)
-
-### Job autonomy T1###
-reliability_result <- psych::alpha(data[,c("jobaut_3", "jobaut_4","jobaut_5")])
-alphas1[4] <-(reliability_result$total$raw_alpha)
-
-### Job autonomy T2###
-reliability_result <- psych::alpha(data[,c("jobaut2_3", "jobaut2_4","jobaut2_5")])
-alphas1[5] <-(reliability_result$total$raw_alpha)
-
-## round alphas into 2 digits
-alphas1 <- round(alphas1,2)
 
 
 # Select the variables for correlation analysis
@@ -407,93 +451,7 @@ kable(correlation_matrix_1, booktabs = TRUE) |>
   kable_styling(font_size = 6, position = "left") 
 
 ```
-*Note.* T1 = collected in Time I (n=209), T2 = collected in Time 2 (n = 137); diagonal values are reliability alpha coefficients. Scales in free will 1-6; Scales in job satisfaction, job autonomy, trait self-esteem, implicit beliefs 1-7; locus of control, 1-7; locus of control, 0-13; trait self-control, 1-5. 
-+p<.10. \*p <.05. \*\*p<.01.\***p<.001.
-
-```{r}
-#| label: tbl-corr-between-subscales
-#| tbl-cap: Correlations between free will subscales and job satisfaction
-#| echo: false
-#| warning: false
-#| message: false
-
-## Table 2 (Appendix) - Correlations between free will subscales and job satisfaction
-
-#Correlations between free will subscales and job satisfaction
-# Select the variables for correlation analysis
-selected_variables_2 <-data[, c("jobsatT1", "jobsatT2", "FWDfw", "FWDagency", "FWDmoral","FWDresp",
-                              "FWDpower","FWDlimit","FWDall","FWDfwagency","FWself","FWgeneral")]
-
-# Compute pairwise correlations
-correlation_matrix_2 <-correlation_matrix(selected_variables_2[,1:12], digits = 2, use = 'lower', replace_diagonal = TRUE)
-
-#choose desired rows and columns
-correlation_matrix_2 <- correlation_matrix_2[c('FWDfwagency','FWDall','FWDfw','FWDagency','FWDmoral','FWDpower',
-                                               "FWDresp",'FWDlimit','FWself','FWgeneral'),]
-correlation_matrix_2 <- correlation_matrix_2[,c('jobsatT1 ','jobsatT2 ')]
-
-#rename columns and rows 
-colnames(correlation_matrix_2)[colnames(correlation_matrix_2) == "jobsatT1 "] <- "Job satisfaction T1"
-colnames(correlation_matrix_2)[colnames(correlation_matrix_2) == "jobsatT2 "] <- "Job satisfaction T2"
-
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDfwagency"] <- "FW T1 Agency and free will subscales"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDall"] <- "FW T1 All subscales combined"
-##ATTENTION: may need to modift the all subscale
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDfw"] <- "FW T1 Free will subscale"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDagency"] <- "FW T1 Personal agency subscale"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDmoral"] <- "FW T1 Moral responsibility subscale"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDpower"] <- "FW T1 Higher power control subscale (R)"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDresp"] <- "FW T1 Personal responsibility subscale"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWDlimit"] <- "FW T1 Personal limitations subscale (R)"
-
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWself"] <- "FW T1 - Personal"
-rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWgeneral"] <- "FW T1 - General"
-
-kable(correlation_matrix_2) |>
-  kable_styling() |>
-  row_spec(c(2,8), hline_after = TRUE)
-
-```
-*Note.* \*p <.05. \*\*p<.01.\***p<.001.
-
-```{r}
-#| label: tbl-demo-corr
-#| tbl-cap: Controlling for demographics
-#| echo: false
-#| warning: false
-#| message: false
-
-## Table 3-Controlling for demographics
-##ATTENTION: still need to work on par.corr
-
-selected_variables_3 <-data[, c("FWDfwagency","jobsatT1", "jobsatT2","age","gender")]
-
-# Compute pairwise correlations
-correlation_matrix_3 <- correlation_matrix(selected_variables_3[,1:5], digits = 2)
-#choose desired rows and columns
-correlation_matrix_3 <- correlation_matrix_3[,c('FWDfwagency ','jobsatT1 ','jobsatT2 ')]
-
-#rename columns and rows 
-colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "FWDfwagency "] <- "Belief in free will (T1)"
-colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "jobsatT1 "] <- "Job satisfaction (T1)"
-colnames(correlation_matrix_3)[colnames(correlation_matrix_3) == "jobsatT2 "] <- "Job satisfaction (T2)"
-
-rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "FWDfwagency"] <- "Belief in free will (T1)"
-rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "jobsatT1"] <- "Job satisfaction (T1)"
-rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "jobsatT2"] <- "Job satisfaction (T2)"
-rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "age"] <- "Age"
-rownames(correlation_matrix_3)[rownames(correlation_matrix_3) == "gender"] <- "Gender"
-
-
-correlation_matrix_3[1,1] <- paste("(" ,alphas1[3],")")
-correlation_matrix_3[2,2] <- paste("(" ,alphas1[1],")")
-correlation_matrix_3[3,3] <- paste("(" ,alphas1[2],")")
-kable(correlation_matrix_3,booktabs = TRUE) |>
-  kable_styling() |>
-  row_spec(3, hline_after = TRUE)
-
-```
-*Note.* T1 = collected in Time I (n=209), T2 = collected in Time 2 (n = 137); diagonal values are reliability alpha coefficients. Values under diagonal are two-tailed correlations whereas above are partial correlations controlling for age and gender (T1). Gender is coded as 0 = Male, 1 = Female. 
+*Note.* T1 = collected in Time 1 (n=209), T2 = collected in Time 2 (n = 137); diagonal values are reliability alpha coefficients. Scales in free will 1-6; Scales in job satisfaction, job autonomy, trait self-esteem, implicit beliefs 1-7; locus of control, 1-7; locus of control, 0-13; trait self-control, 1-5. 
 +p<.10. \*p <.05. \*\*p<.01.\***p<.001.
 
 # Discussion 
@@ -546,6 +504,67 @@ Finally, we believe it is imperative to consider the potential of datasets like 
 
 In summary, our investigation based on the original paper from @feldman affirmed a strong positive link between the belief in free will and job satisfaction within the dynamic sphere of the gig economy, notably on Amazon's Mechanical Turk platform. Central to this relationship is the role of perceived autonomy, which significantly elevates job satisfaction levels. These findings underscore the importance of nurturing autonomy within gig work, advocating for a work environment that acknowledges and bolsters personal agency. As the gig economy continues to evolve, future research should delve into the broader application of these insights, aiming to enhance the well-being and job satisfaction of the diverse gig workforce.
 
+\appendix
+
+# Appendix {-}
+
+## Study 1 Scale {#sec-study1}
+
+Free will  
+* I am in charge of the decisions I make.  
+* I actively choose what to do among the choices I have.  
+* I am in charge of my actions even when my life’s circumstances are difficult.  
+(Five additional questions relating to free will were asked.)  
+  
+Job satisfaction  
+* Generally speaking, I am very satisfied with my job.  
+* I am generally satisfied with the feeling of worthwhile accomplishment I get from doing this job.  
+* I am satisfied with the kind of work I do in this job.  
+
+## Study 2 Scale {#sec-study2}
+
+Free will  
+* I have free will    
+* Free will is a part of the human spirit  
+* Free will is a basic part of human nature  
+(Six additional questions relating to free will were asked.)  
+
+Job satisfaction  
+* I feel fairly well satisfied with my present job doing MTurk tasks  
+* Most days I am enthusiastic about the work I do on MTurk  
+* Every time I work on tasks on MTurk it feels like forever  
+(Two additional questions relating to job satisfaction were asked.)  
+
+Job autonomy  
+* I have significant autonomy in determining how I do my job on MTurk  
+* I can decide on my own how to go about doing my work on MTurk  
+* I have considerable opportunity for independence and freedom in how I do my job on MTurk  
+
+Controls  
+* I am good at resisting temptation.  
+* I have a hard time breaking bad habits.  
+* I am lazy.  
+(10 additional questions relating to controls were asked.)  
+
+Self-esteem  
+* I feel that I am a person of worth, at least on an equal basis with others.  
+* I feel that I have a number of good qualities.  
+* All in all, I am inclined to feel that I am a failure.  
+(Seven additional questions relating to self-esteem were asked.)  
+
+Self-efficacy  
+* I am strong enough to overcome life's struggles.  
+* At root, I am a weak person.  
+* I can handle the situations that life brings.  
+(Five additional questions relating to self-efficacy were asked.)  
+
+## Study 3 Scale {#sec-study3}
+
+* Indicate how much freedom of choice and control you feel you have over the way
+your life turns out (1 = No choice and control to 10 = A great deal of choice and control)  
+* Overall, how satisfied or dissatisfied are you with your job? (1 = Dissatisfied to 10 =
+Satisfied).  
+* How free are you to make decisions in your job? (1 = None at all to 10 = A great deal)  
 
 \newpage
 # References
