@@ -208,7 +208,7 @@ The original authors used `SPSS` to run analyses on their findings. Data from st
 
 ## Main Findings
 
-Our analysis revealed a consistent positive correlation between beliefs in free will and job satisfaction across different cultural contexts. For instance, in @fig-beliefs-vs-satis, we observed a clear upward trend among Taiwanese real estate agents, where stronger free will beliefs were associated with higher job satisfaction; this analysis results from Study 1 can be used as a non-same type of worker situation to potentially support the relationship between free will and job satisfaction of Amazon American gig workers. Later, we find similar results for Amazon American gig workers; @fig-beliefs-vs-satis illustrates the same pattern among American gig workers. These trends suggest that the perception of autonomy can significantly enhance job contentment.
+Our analysis revealed a consistent positive correlation between beliefs in free will and job satisfaction across different cultural contexts. For instance, in @fig-beliefs-vs-satis, we observed a clear upward trend among Taiwanese real estate agents, where stronger free will beliefs were associated with higher job satisfaction; this analysis results from Study 1 can be used as a non-same type of worker situation to potentially support the relationship between free will and job satisfaction of Amazon American gig workers. Later, we found similar results for Amazon American gig workers; @fig-beliefs-vs-satis illustrates the same pattern among American gig workers. These trends suggest that the perception of autonomy can significantly enhance job contentment.
 
 
 ## Reliability of Subscales 
