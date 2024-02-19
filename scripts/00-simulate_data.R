@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: Simulate the dataset of MHA Apprehensions for code testing
+# Purpose: Simulate the dataset for code testing
 # Author: Mingjia Chen, Hadi Ahmad, Tianen (Evan) Hao
 # Date: 17 February 2024 
 # Contact: mingjia.chen@mail.utoronto.ca 
