@@ -449,7 +449,7 @@ kable(correlation_matrix_3,booktabs = TRUE) |>
 *Note.* T1 = collected in Time I (n=209), T2 = collected in Time 2 (n = 137); diagonal values are reliability alpha coefficients. Values under diagonal are two-tailed correlations whereas above are partial correlations controlling for age and gender (T1). Gender is coded as 0 = Male, 1 = Female. 
 +p<.10. \*p <.05. \*\*p<.01.\***p<.001.
 
-# Discussion
+# Discussion 
 
 ## Detailed findings
 
@@ -494,6 +494,11 @@ To address these concerns in some unclear variables in correlation coefficients,
 A closer examination of the statistical tools and methodologies is essential to solve the observed differences in significance levels and p-values between our study and the original research. The discrepancy, particularly in the robustness of the significance label observed in correlation tables, suggests a variation in the statistical analysis approach due to the utilization of R in our study as opposed to SPSS in the original research. Therefore, future endeavours should involve a detailed comparison and calibration of analytical techniques across different statistical software to ensure consistency in findings.
 
 Finally, we believe it is imperative to consider the potential of datasets like the one from Study 3, which presents a valuable opportunity for comprehensive analysis with its large sample size and cross-cultural scope. Unfortunately, this dataset was not made available in the original paper, leading us to focus our efforts on Study 2. Moving forward, we are particularly interested in leveraging such diverse, cross-cultural, and large-scale datasets to deepen our understanding of the impact of free will beliefs on job satisfaction across different global contexts. This approach promises to enrich our insights and enhance the generalizability of our findings, opening new avenues for investigation in the gig economy and beyond.
+
+# Conclusion
+
+In summary, our investigation based on the original paper from @feldman affirmed a strong positive link between the belief in free will and job satisfaction within the dynamic sphere of the gig economy, notably on Amazon's Mechanical Turk platform. Central to this relationship is the role of perceived autonomy, which significantly elevates job satisfaction levels. These findings underscore the importance of nurturing autonomy within gig work, advocating for a work environment that acknowledges and bolsters personal agency. As the gig economy continues to evolve, future research should delve into the broader application of these insights, aiming to enhance the well-being and job satisfaction of the diverse gig workforce.
+
 
 \newpage
 # References
