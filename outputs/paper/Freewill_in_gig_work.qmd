@@ -32,7 +32,7 @@ library(knitr)
 library(kableExtra)
 
 # Read the data
-data <- read_csv("FW_satisfaction-Study_2-data.csv")
+data <- read_csv("outputs/data/FW_satisfaction-Study_2-data.csv")
 ```
 
 
@@ -167,7 +167,7 @@ The second study focused on 137 American freelance workers, with a different set
 #| warning: false
 #| message: false
 
-data_freq <- read.csv("jobsatT1_data_freq.csv")           
+data_freq <- read.csv("outputs/data/jobsatT1_data_freq.csv")           
 # Create the bar chart
 ggplot(data_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
   geom_bar(stat = "identity") +
@@ -176,7 +176,7 @@ ggplot(data_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
   theme_minimal() +
   theme(legend.position = "bottom")
 
-data2_freq <- read.csv("jobsatT2_data_freq.csv") 
+data2_freq <- read.csv("outputs/data/jobsatT2_data_freq.csv") 
 # Create the bar chart
 ggplot(data2_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
   geom_bar(stat = "identity") +
@@ -185,7 +185,7 @@ ggplot(data2_freq, aes(x = Question, y = Percent, fill = factor(Response))) +
   theme_minimal() +
   theme(legend.position = "bottom")
 
-data_freq3 <- read.csv("FW_data_freq.csv")           
+data_freq3 <- read.csv("outputs/data/FW_data_freq.csv")           
 # Create the bar chart
 ggplot(data_freq3, aes(x = Question, y = Percent, fill = factor(Response))) +
   geom_bar(stat = "identity") +
@@ -350,7 +350,7 @@ Through this paper, we conducted a replication study on institutional beliefs in
 #| warning: false
 #| message: false
 
-data_TW <- read_csv("FW satisfaction-Study 1-data.csv")
+data_TW <- read_csv("outputs/data/FW satisfaction-Study 1-data.csv")
 
 lm_fit_TW <- lm(FW ~ JS, data=data_TW)
 
