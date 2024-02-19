@@ -1,6 +1,6 @@
 ---
-title: "Free Will in Gig Work: The Key to Enhancing Job Satisfaction"
-subtitle: "A Replication of Study Published in 2018 as Gig Economy Serves as an Essential Part of Society"
+title: "The Freedom of Choice in the Gig Economy "
+subtitle: "Belief in Free Will Positively Predicts Job Satisfaction"
 author: 
   - Mingjia Chen
   - Hadi Ahmad
@@ -9,7 +9,7 @@ thanks: "Code and data are available at: https://github.com/ShadyEvan4830/Freewi
 platform available at: TBA"
 date: February 11, 2024
 date-format: long
-abstract: "In the area of work and personal beliefs, the concept of free will has a key impact on job satisfaction with people from different demographic backgrounds having various views based on their unique circumstances. This study examined the relationship between free will beliefs and job satisfaction across a series of studies involving Taiwanese real estate agents, U.S. online workers, and a diverse international sample, according to the academic paper from Feldman et al. (2018). We conducted a replication study of the paper by Feldman et al. (2018) regarding the gig economy within Amazon Mechanical Turk and found a strong positive correlation between individuals’ beliefs about free will and their job satisfaction, significantly mediated by perceived autonomy. Since the gig economy is such an essential part of society today, replicating this study will advance the conversation about how beliefs about free will impact job satisfaction in non-traditional work settings."
+abstract: "In the area of work and personal beliefs, the concept of free will has a key impact on job satisfaction, with people from different demographic backgrounds having various views based on their unique circumstances. This study examined the relationship between free will beliefs and job satisfaction across a series of studies involving Taiwanese real estate agents, U.S. online workers, and a diverse international sample, according to the academic paper from Feldman et al. (2018). We conducted a replication study of the paper by Feldman et al. (2018) regarding the gig economy within Amazon Mechanical Turk and found a strong positive correlation between individuals’ beliefs about free will and their job satisfaction, significantly mediated by perceived autonomy. Since the gig economy is such an essential part of society today, replicating this study will advance the conversation about how beliefs about free will impact job satisfaction in non-traditional work settings."
 format: pdf
 toc: true
 number-sections: true
@@ -134,19 +134,89 @@ correlation_matrix <- function(df,
 
 # Introduction
 
-The intersection of agency beliefs and workplace outcomes has become a focal point of contemporary psychological research, revealing nuanced insights into how deeply held convictions shape our professional experiences. @feldman seminal investigation into the dynamics of free will beliefs and job satisfaction unveils a pivotal link, positing that individuals' conviction in their autonomy significantly forecasts their contentment at work. The original paper focused on three study aspects, traversing cultural landscapes from Taiwanese real-estate sectors to American online labour markets and extending its reach to a global evaluation through the World Values Survey, encompassing over 14,000 participants across 16 nations.
+The intersection of agency beliefs and workplace outcomes has become a focal point of contemporary psychological research, revealing nuanced insights into how deeply held convictions shape our professional experiences. @feldman seminal investigation into the dynamics of free will beliefs and job satisfaction unveils a pivotal link, positing that individuals' conviction in their autonomy significantly forecasts their contentment at work. Their research amplifies our understanding of the psychological underpinnings of job satisfaction and propels a discourse on the broader societal and cultural factors that sculpt our professional well-being. This paper seeks to build upon Feldman and other scholars' [@feldman] foundational research, extending its theoretical and empirical contributions to examine the implications of free will beliefs in a distinct yet paralleled context. Our focus shifts towards the burgeoning realm of digital workplaces, explicitly examining the phenomenon within Amazon's Mechanical Turk (MTurk) community. Amazon Mechanical Turk (MTurk) is a crowdsourcing marketplace operated by Amazon where individuals and businesses can outsource tasks and processes to a distributed workforce who can perform these tasks virtually. Our study is poised to explore whether the nuanced dynamics of agency beliefs within the digital gig economy can shed light on the positive ramifications of free will beliefs on job satisfaction among a global workforce engaged in micro-tasks. 
 
-The initial study among Taiwanese real-estate agents underscored a direct correlation between free will beliefs and job satisfaction, sustained over three months, challenging the transient nature of workplace sentiments. In contrast, the second study leveraged the Amazon Mechanical Turk platform to affirm these findings within the American workforce, introducing a comparative analysis of free will beliefs against other agency constructs, thereby reinforcing the unique predictive power of free will beliefs on job satisfaction. Moreover, the expansive third study illuminated the cultural contours of this relationship, identifying job autonomy as a crucial mediator while unravelling the moderating role of national-level endorsements of free will beliefs on job satisfaction.
+The gig economy's rise reshapes work, offering greater autonomy but uncertain income and benefits. This shift necessitates a new understanding of free will's role in modern job satisfaction as workers navigate the trade-offs between flexibility and stability. Through this lens, we aim to contribute a fresh perspective to the discourse on free will and job satisfaction, underpinned by robust empirical evidence and a comprehensive analysis of its implications in contemporary work environments.
 
-Feldman and other scholars' [@feldman] inquiry amplifies our understanding of the psychological underpinnings of job satisfaction and propels a discourse on the broader societal and cultural factors that sculpt our professional well-being. This paper seeks to build upon Feldman and other scholars' [@feldman] foundational research, extending its theoretical and empirical contributions to examine the implications of free will beliefs in a distinct yet paralleled context. Our focus shifts towards the burgeoning realm of digital workplaces, explicitly examining the phenomenon within Amazon's Mechanical Turk (MTurk) community. Our study is poised to explore whether the nuanced dynamics of agency beliefs within the digital gig economy can shed light on the positive ramifications of free will beliefs on job satisfaction among a global workforce engaged in micro-tasks. The gig economy's rise reshapes work, offering greater autonomy but uncertain income and benefits. This shift necessitates a new understanding of free will's role in modern job satisfaction, as workers navigate the trade-offs between flexibility and stability. Through this lens, we aim to contribute a fresh perspective to the discourse on free will and job satisfaction, underpinned by robust empirical evidence and a comprehensive analysis of its implications in contemporary work environments.
-
-This paper focuses specifically on the gig economy and Amazon Mechanical Turk. It is structured first by summarizing the purpose, methods, and results of the study, emphasizing the positive correlation between free will beliefs and job satisfaction. The introduction introduces the background and outlines the structure of the paper. The data and results from Feldman et al.'s study and our analysis highlight the role of perceived autonomy. The discussion explains these findings and points out their theoretical and practical implications. Ethical considerations and biases in accounting address research integrity issues. The conclusion reiterates the study's contribution to understanding job satisfaction in nontraditional work settings. Appendices and references provide supplementary information and scholarly resources.
+This paper uses the statistical programming language R [@citeR] and related libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr ` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], `Hmisc` [@Hmisc], and `knitr` [@knitr] to analyze the gig economy and Amazon Mechanical Turk. It is structured by summarizing the study's purpose, methods, and results and emphasizing the positive correlation between free will beliefs and job satisfaction. The introduction introduces the background and outlines the structure of the paper. The data and results sections present each study's design, questions, and variables with figures and tables @fig-beliefs-vs-satis,  @tbl-Means-SD-Corr, @tbl-corr-between-subscales, and @tbl-demo-corr. We aim to highlight the use of Likert-type scales and the focus on autonomy, job satisfaction, and free will beliefs. The replication process and the tools used for data analysis are also mentioned, providing a foundation for understanding how the study was conducted and analyzed. The discussion explains these findings and points out their theoretical and practical implications; in addition, in order to further confirm the validity of the original paper and our analysis, we selected another peer-reviewed professional academic journal @Baldissarri as a reference for comparison and to support our opinions. Ethical considerations and biases in accounting address research integrity issues. The conclusion reiterates the study's contribution to understanding job satisfaction in nontraditional work settings. References provide supplementary information and scholarly resources.
 
 # Data
 
-The original paper was based on three studies conducted by the authors, with data that can be found on the Open Science Foundation website. The provided data [@feldman] was replicated in `R` [@citeR], with the goal of determining if there are any errors in the models, and what more can be learned and applied in a Canadian context.  Libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], and `knitr` [@knitr] are used for supplementary analysis. The goal of the study was to understand if a relationship exists between a belief of free will and job satisfaction for different cultural contexts.
+## Data Tools
+
+The original paper was based on three studies conducted by the authors, with data that can be found on the `Open Science Foundation (OSF)` website. The provided data [@feldman] was replicated in `R` [@citeR], with the goal of determining if there are any errors in the models, and what more can be learned and applied in a Canadian context. The libraries mentioned above are used for supplementary analysis. The goal of the original study was to understand if a relationship exists between a belief of free will and job satisfaction in different cultural contexts. 
+
+## Methodology
+
+The original paper was based on two studies conducted by the authors, and secondary data comprising the third study. The questions were translated from English to Chinese and back to English by senior researchers fluent in both languages, due to language differences in Study 2. These translations were cross-verified by another senior researcher also fluent in both languages, to ensure the responses accurately captured the sentiments of the respondents.
+
+### Study 1
+
+In the first study, eight questions were asked about free will and three questions about job satisfaction using a Likert-type scale. It looked at responses from 252 real estate agents in Taiwan. The goal of the study was to determine if there was a correlation between the belief of free will and job satisfaction for the chosen respondents, and to test if a three-month delay introduced any variation in results. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree). As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. Below is a sample of the questions asked:
+
+Free will  
+* I am in charge of the decisions I make.  
+* I actively choose what to do among the choices I have.  
+* I am in charge of my actions even when my life’s circumstances are difficult.  
+(Five additional questions relating to free will were asked.)  
+  
+Job satisfaction  
+* Generally speaking, I am very satisfied with my job.  
+* I am generally satisfied with the feeling of worthwhile accomplishment I get from doing this job.  
+* I am satisfied with the kind of work I do in this job.  
+
+### Study 2
+
+The second study focused on 137 American freelance workers, with a different set of survey questions examining a broader range of metrics on free will and satisfaction using a Likert-type scale. The goal of the second study was to test if the results of the first study could be applied to other contexts, to test if other agency factors affected the results, and to assess if a six-month delay introduced any variation in results. These questions can be broken down into the categories of job satisfaction, job autonomy, self-efficiency, free will, self-control, locus of control, self-esteem, self-efficacy, and implicit beliefs. Data on these additional variables was collected to examine if controlling for differences in factors like locus of control led to any differences in job satisfaction. Each variable represents a question that respondents answered, containing the value provided by the respondent from the survey. This value is stored as an integer ranging from 1 (strongly disagree) to 5 or 6 depending on the question (strongly agree). The answers to the locus of control questions serve as an exception, storing a sum of values by assigning a 0 or 1 depending on which option was chosen for a set of 13 questions. As a result, the data is available not just as an aggregate, but for each anonymized respondent. Additional variables are included to store the age and gender of respondents. Below is a sample of questions asked:
+
+Free will  
+* I have free will    
+* Free will is a part of the human spirit  
+* Free will is a basic part of human nature  
+(Six additional questions relating to free will were asked.)  
+
+Job satisfaction  
+* I feel fairly well satisfied with my present job doing MTurk tasks  
+* Most days I am enthusiastic about the work I do on MTurk  
+* Every time I work on tasks on MTurk it feels like forever  
+(Two additional questions relating to job satisfaction were asked.)  
+
+Job autonomy  
+* I have significant autonomy in determining how I do my job on MTurk  
+* I can decide on my own how to go about doing my work on MTurk  
+* I have considerable opportunity for independence and freedom in how I do my job on MTurk  
+
+Controls  
+* I am good at resisting temptation.  
+* I have a hard time breaking bad habits.  
+* I am lazy.  
+(10 additional questions relating to controls were asked.)  
+
+Self-esteem  
+* I feel that I am a person of worth, at least on an equal basis with others.  
+* I feel that I have a number of good qualities.  
+* All in all, I am inclined to feel that I am a failure.  
+(Seven additional questions relating to self-esteem were asked.)  
+
+Self-efficacy  
+* I am strong enough to overcome life's struggles.  
+* At root, I am a weak person.  
+* I can handle the situations that life brings.  
+(Five additional questions relating to self-efficacy were asked.)  
 
 
+### Study 3
+
+The third study relied on secondary data in the form of the World Values Survey, featuring over 14,000 respondents from 16 countries. The original dataset was not made available, and thus could not be replicated in this paper. Three variables were chosen from this dataset, representing the following questions asked:
+* Indicate how much freedom of choice and control you feel you have over the way
+your life turns out (1 = No choice and control to 10 = A great deal of choice and control)
+* Overall, how satisfied or dissatisfied are you with your job? (1 = Dissatisfied to 10 =
+Satisfied).
+* How free are you to make decisions in your job? (1 = None at all to 10 = A great deal)
+
+## Replication
+
+The original authors used `SPSS` to run analyses on their findings. Data from studies 1 and 2 was provided in the replication package on `OSF` as SPS and SAV files, along with a version compiled into a spreadsheet. For this paper, we used `R` to replicate the findings by using `haven` to read in the data. This caused some incongruencies in the results, with a lower p-value on some variables.
 
 ```{r}
 #| label: fig-beliefs-vs-satis
@@ -185,25 +255,13 @@ data |>
 
 ```
 
+  
+
 \break
-## Methodology
-
-The original paper was based on three studies conducted by the authors. The first study looked at responses to survey questions from 252 real estate agents in Taiwan. The questions were translated from English to Chinese and back to English by senior researchers fluent in both languages, due to language differences between the respondents in Study 1 and Study 2. These translations were cross-verified by another senior researcher also fluent in both languages, to ensure the responses accurately captured the sentiments of the respondents. A total of eight questions were asked about free will and three questions about job satisfaction, with responses taken through a Likert-type scale. Here is a sample of the questions asked:
-
-* I am in charge of the decisions I make.
-* I actively choose what to do among the choices I have.
-* I am in charge of my actions even when my life’s circumstances are difficult.
-(Five additional questions relating to free will were asked.)
-
-* Generally speaking, I am very satisfied with my job.
-* I am generally satisfied with the feeling of worthwhile accomplishment I get from doing this job.
-* I am satisfied with the kind of work I do in this job.
-
-while the second study focused on 137 American freelance workers, and the third study collected responses from over 14,000 employees in 16 countries about [types of questions]. 
-
-## Features
 
 # Results
+
+
 ```{r}
 #| label: tbl-Means-SD-Corr
 #| tbl-cap: Study 2 Means, Standard Deviations, and Correlations
@@ -419,18 +477,23 @@ We agree with the above ethically appropriate measures of the original academic 
 
 In addressing bias within the discussion section of our paper, it's essential to acknowledge that while our study expands on the foundational research by @feldman in exploring the impact of free will beliefs on job satisfaction, particularly within the digital gig economy of Amazon Mechanical Turk, inherent biases in data collection and analysis could influence the outcomes. Ethical implications and biases naturally emerge in both quantitative and qualitative research. For instance, sampling bias can occur when the study participants are not representative of the broader population intended to be analyzed. This type of bias might be mitigated through strategies such as simple random sampling, ensuring that every individual within the target population has an equal chance of selection. However, challenges such as self-selection bias, where individuals with a strong interest in the topic may be more likely to participate, can skew results. Despite efforts to create a representative sample through demographic balancing, such biases may persist, potentially limiting the generalizability of the findings. Thus, acknowledging these limitations and adopting rigorous methodological safeguards are crucial for enhancing the credibility and applicability of research conclusions.
 
-## Analytical Limitations and Future Research Pathways
+## Analytical Limitations
 
-While our study sheds light on the relationship between free will beliefs and job satisfaction in the context of MTurk, it also highlights several limitations. The unique demographics of MTurk workers and the platform's specific work conditions may not fully extrapolate to the broader gig economy. For instance, platforms like MTurk offer a degree of autonomy by allowing workers to choose tasks; however, this freedom is within the confines of predetermined task parameters and compensation set by the platform. Future research should explore this relationship across diverse gig platforms and investigate the longitudinal effects of free will beliefs on job satisfaction to establish causality. Additionally, examining the interplay between personal autonomy and platform policies could offer insights into optimizing job satisfaction in gig work.
+While our study sheds light on the relationship between free will beliefs and job satisfaction in the context of MTurk, it also highlights several limitations. The unique demographics of MTurk workers and the platform's specific work conditions may not fully extrapolate to the broader gig economy. For instance, platforms like MTurk offer a degree of autonomy by allowing workers to choose tasks; however, this freedom is within the confines of predetermined task parameters and compensation set by the platform. 
 
-Upon revisiting the original paper by @feldman, we have identified certain unclear in the correlation coefficients about the variable 'Beliefs in Free Will (T1).' Unlike other variables used for the tables, the 'Beliefs in Free Will (T1)' components are not explicitly defined in the original paper and other supplementary documents. For the sack of replicating, we chose 'Free Will General (T1)' for the correlation analysis since the description is one of the closest possible variables representing  'Beliefs in Free Will (T1)'; however, the original authors split them into different columns and classified them with very vague names. Such discrepancies could lead people who try to replicate this paper to unclear definitions and calculation errors, thus necessitating a closer examination of the computational processes employed in the original study. Another variable, ' FW T1 All subscales combined', has a similar problem. 
+Upon revisiting the original paper by @feldman, we have identified certain unclear in the correlation coefficients about the variable `Beliefs in Free Will (T1)` in @tbl-Means-SD-Corr and @tbl-demo-corr. Unlike other variables used for the tables, the 'Beliefs in Free Will (T1)' components are not explicitly defined in the original paper and other supplementary documents. Such discrepancies could lead people replicating this paper to unclear definitions and calculation errors, thus necessitating a closer examination of the computational processes employed in the original study. Another variable, ' FW T1 All subscales combined' in @tbl-corr-between-subscales, has a similar problem. 
 
-To address these concerns in our discussion, we recommend thoroughly re-evaluating the data computation methods used, including a detailed review of the data transformation steps described by @feldman. Enhanced validation procedures and sensitivity analyses will be instrumental in clarifying these differences. This approach will bolster the credibility of our replication study and contribute to the scientific community's ongoing efforts to refine research methodologies in the study of free will beliefs and their impact on job satisfaction. 
+In addition, in @tbl-corr-between-subscales, we found that the significance label is more robust, where the p-value is smaller (<. 001) compared to the original paper (<.01). The difference could result from differences between statistical tools we used for the analysis (R versus SPS).
 
+## Future Research Pathways
 
-## Concluding Observations
+In light of the above limitations, future research should explore this relationship across diverse gig platforms and investigate the longitudinal effects of free will beliefs on job satisfaction to establish the relation. Additionally, examining the interplay between personal autonomy and platform policies could offer insights into optimizing job satisfaction in gig work.
 
-Overall, our study sought to determine whether a positive correlation exists between American workers' beliefs in free will and their job satisfaction on Amazon Mechanical Turk (MTurk). Our results confirmed a positive relationship, indicating that workers with stronger beliefs in free will tend to report higher levels of job satisfaction. This finding is supported by data analysis showing that perceived autonomy, a critical aspect of free will, significantly contributes to this increased satisfaction. These insights validate our hypothesis and highlight the importance of fostering an environment that supports autonomy and personal agency in gig economy platforms like MTurk.
+To address these concerns in some unclear variables in correlation coefficients, we recommend thoroughly re-evaluating the data computation methods used, including a detailed review of the data transformation steps described by @feldman. Enhanced validation procedures and sensitivity analyses will be instrumental in clarifying these differences. This approach will bolster the credibility of our replication study and contribute to the scientific community's ongoing efforts to refine research methodologies in the study of free will beliefs and their impact on job satisfaction. 
+
+A closer examination of the statistical tools and methodologies is essential to solve the observed differences in significance levels and p-values between our study and the original research. The discrepancy, particularly in the robustness of the significance label observed in correlation tables, suggests a variation in the statistical analysis approach due to the utilization of R in our study as opposed to SPSS in the original research. Therefore, future endeavours should involve a detailed comparison and calibration of analytical techniques across different statistical software to ensure consistency in findings.
+
+Finally, we believe it is imperative to consider the potential of datasets like the one from Study 3, which presents a valuable opportunity for comprehensive analysis with its large sample size and cross-cultural scope. Unfortunately, this dataset was not made available in the original paper, leading us to focus our efforts on Study 2. Moving forward, we are particularly interested in leveraging such diverse, cross-cultural, and large-scale datasets to deepen our understanding of the impact of free will beliefs on job satisfaction across different global contexts. This approach promises to enrich our insights and enhance the generalizability of our findings, opening new avenues for investigation in the gig economy and beyond.
 
 \newpage
 # References
