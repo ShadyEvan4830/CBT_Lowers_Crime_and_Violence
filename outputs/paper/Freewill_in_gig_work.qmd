@@ -5,7 +5,7 @@ author:
   - Mingjia Chen
   - Hadi Ahmad
   - Tianen (Evan) Hao
-thanks: "Code and data are available at: https://github.com/ShadyEvan4830/Freewill_Analysis/tree/main; Replication on Social Science Reproduction"
+thanks: "Code and data are available at: https://github.com/ShadyEvan4830/Freewill_Analysis/tree/main; Replication on Social Science Reproduction: https://www.socialsciencereproduction.org/reproductions/26b6954c-44ec-4eba-afbb-e19847958dc8/index"
 platform available at: TBA"
 date: February 11, 2024
 date-format: long
@@ -146,27 +146,44 @@ This paper focuses specifically on the gig economy and Amazon Mechanical Turk. I
 
 The original paper was based on three studies conducted by the authors, with data that can be found on the Open Science Foundation website. The provided data [@feldman] was replicated in `R` [@citeR], with the goal of determining if there are any errors in the models, and what more can be learned and applied in a Canadian context.  Libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], and `knitr` [@knitr] are used for supplementary analysis. The goal of the study was to understand if a relationship exists between a belief of free will and job satisfaction for different cultural contexts.
 
+
+
 ```{r}
 #| label: fig-beliefs-vs-satis
-#| fig-cap: Beliefs in Free will vs. Job Satisfaction
+#| fig-cap: Beliefs in Free will vs. Job Satisfaction between Two Populations
+#| fig-subcap: ["Taiwanese Real-estate Agents (Study 1)","US Online Labor Market Workers (Study 2)"]
+#| layout-ncol: 2
 #| echo: false
 #| warning: false
 #| message: false
 
-jobsat <- rowMeans(data[, c("jobsatT1", "jobsatT2")])
+data_TW <- read_csv("FW satisfaction-Study 1-data.csv")
+
+lm_fit_TW <- lm(FW ~ JS, data=data_TW)
+
+jobsat <- rowMeans(data[, c("jobsatT1", "jobsatT2")]) 
 
 lm_fit <- lm(FWDfwagency ~ jobsat, data=data)
 
+  
+data_TW |>
+  ggplot(aes(x = FW, y = JS)) +
+  geom_point(color='blue') +
+  geom_smooth(method='lm', se = FALSE, col = "black") +
+  theme_minimal() +
+  labs(x = "Free Will Belief", y = "Job satisfaction") +
+  scale_color_brewer(palette = "Set1") 
+
+
 data |>
   ggplot(aes(x = FWDfwagency, y = jobsat)) +
-  geom_point() +
-  geom_smooth(method='lm', se = FALSE, col = "red") +
+  geom_point(color='red') +
+  geom_smooth(method='lm', se = FALSE, col = "black") +
   theme_minimal() +
-  labs(x = "Free Will Belief", y = "Job satisfaction")
-  add_footnote("Linear regression model with coefficient of 0.2236.")
-```
+  labs(x = "Free Will Belief", y = "Job satisfaction") +
+  scale_color_brewer(palette = "Set1") 
 
-Linear regression model with coefficient of 0.2236.
+```
 
 \break
 ## Methodology
@@ -254,11 +271,11 @@ correlation_matrix_1<- cbind(M,SD, correlation_matrix_1)
 
 
 #rename columns and rows in r
-colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobsatT1 "] <- "Job satisfaction(T1)"
-colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobsatT2 "] <- "Job satisfaction(T2)"
-colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "FWDfwagency "] <- "Belief in free will(T1)"
-colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobautT1 "] <- "Job autonomy(T1)"
-colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobautT2 "] <- "Job autonomy(T2)"
+colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobsatT1 "] <- "(T1)"
+colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobsatT2 "] <- "(T2)"
+colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "FWDfwagency "] <- "(T1)"
+colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobautT1 "] <- "(T1)"
+colnames(correlation_matrix_1)[colnames(correlation_matrix_1) == "jobautT2 "] <- "(T2)"
 
 rownames(correlation_matrix_1)[rownames(correlation_matrix_1) == "jobsatT1"] <- "Job satisfaction(T1)"
 rownames(correlation_matrix_1)[rownames(correlation_matrix_1) == "jobsatT2"] <- "Job satisfaction(T2)"
@@ -281,8 +298,9 @@ correlation_matrix_1[5,7] <- paste("(" ,alphas1[5],")")
 
 #print the table
 kable(correlation_matrix_1, booktabs = TRUE) |>
-  kable_styling(font_size = 6,position = "left")
-  
+  add_header_above(c(" " =1, " " = 1, " " = 1, "Job satisfaction" =1,"Job satisfaction" = 1,"Belief in free will" =1,"Job autonomy" =1,"Job autonomy" = 1),line=FALSE, align = "c") |>
+  kable_styling(font_size = 6, position = "left") 
+
 ```
 *Note.* T1 = collected in Time I (n=209), T2 = collected in Time 2 (n = 137); diagonal values are reliability alpha coefficients. Scales in free will 1-6; Scales in job satisfaction, job autonomy, trait self-esteem, implicit beliefs 1-7; locus of control, 1-7; locus of control, 0-13; trait self-control, 1-5. 
 +p<.10. \*p <.05. \*\*p<.01.\***p<.001.
@@ -329,6 +347,7 @@ rownames(correlation_matrix_2)[rownames(correlation_matrix_2) == "FWgeneral"] <-
 kable(correlation_matrix_2) |>
   kable_styling() |>
   row_spec(c(2,8), hline_after = TRUE)
+
 ```
 *Note.* \*p <.05. \*\*p<.01.\***p<.001.
 
