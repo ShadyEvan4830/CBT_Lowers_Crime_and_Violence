@@ -32,7 +32,7 @@ library(knitr)
 library(kableExtra)
 
 # Read the data
-data <- read_csv("FW_satisfaction-Study_2-data.csv")
+data <- read_csv("outputs/paper/FW_satisfaction-Study_2-data.csv")
 ```
 
 
@@ -138,7 +138,7 @@ The intersection of agency beliefs and workplace outcomes has become a focal poi
 
 The gig economy's rise reshapes work, offering greater autonomy but uncertain income and benefits. This shift necessitates a new understanding of free will's role in modern job satisfaction as workers navigate the trade-offs between flexibility and stability. Through this lens, we aim to contribute a fresh perspective to the discourse on free will and job satisfaction, underpinned by robust empirical evidence and a comprehensive analysis of its implications in contemporary work environments.
 
-This paper uses the statistical programming language R [@citeR] and related libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr ` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], `Hmisc` [@Hmisc], and `knitr` [@knitr] to analyze the gig economy and Amazon Mechanical Turk. It is structured by summarizing the study's purpose, methods, and results and emphasizing the positive correlation between free will beliefs and job satisfaction. The introduction introduces the background and outlines the structure of the paper. The data and results sections present each study's design, questions, and variables with figures and tables @fig-beliefs-vs-satis,  @tbl-Means-SD-Corr, @tbl-corr-between-subscales, and @tbl-demo-corr. We aim to highlight the use of Likert-type scales and the focus on autonomy, job satisfaction, and free will beliefs. The replication process and the tools used for data analysis are also mentioned, providing a foundation for understanding how the study was conducted and analyzed. The discussion explains these findings and points out their theoretical and practical implications; in addition, in order to further confirm the validity of the original paper and our analysis, we selected another peer-reviewed professional academic journal @Baldissarri as a reference for comparison and to support our opinions. Ethical considerations and biases in accounting address research integrity issues. The conclusion reiterates the study's contribution to understanding job satisfaction in nontraditional work settings. References provide supplementary information and scholarly resources.
+This paper uses the statistical programming language R [@citeR] and related libraries such as `tidyverse` [@tidyverse], `janitor` [@janitor], `ggplot2` [@ggplot2], `dplyr` [@dplyr], `readr ` [@readr], `tibble` [@tibble], `kableExtra` [@kableExtra], `psych` [@psych], `haven`[@haven], `Hmisc` [@Hmisc], and `knitr` [@knitr] to analyze the gig economy and Amazon Mechanical Turk. It is structured by summarizing the study's purpose, methods, and results and emphasizing the positive correlation between free will beliefs and job satisfaction. The introduction introduces the background and outlines the structure of the paper. The data and results sections present each study's design, questions, and variables with figures and tables @fig-descrip, @fig-beliefs-vs-satis, @tbl-corr-between-subscales, @tbl-demo-corr, and @tbl-Means-SD-Corr. We aim to highlight the use of Likert-type scales and the focus on autonomy, job satisfaction, and free will beliefs. The replication process and the tools used for data analysis are also mentioned, providing a foundation for understanding how the study was conducted and analyzed. The discussion explains these findings and points out their theoretical and practical implications; in addition, in order to further confirm the validity of the original paper and our analysis, we selected another peer-reviewed professional academic journal @Baldissarri as a reference for comparison and to support our opinions. Ethical considerations and biases in accounting address research integrity issues. The conclusion reiterates the study's contribution to understanding job satisfaction in nontraditional work settings. References provide supplementary information and scholarly resources.
 
 # Data
 
@@ -350,7 +350,7 @@ Through this paper, we conducted a replication study on institutional beliefs in
 #| warning: false
 #| message: false
 
-data_TW <- read_csv("FW satisfaction-Study 1-data.csv")
+data_TW <- read_csv("outputs/paper/FW satisfaction-Study 1-data.csv")
 
 lm_fit_TW <- lm(FW ~ JS, data=data_TW)
 
